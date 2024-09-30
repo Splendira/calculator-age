@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./public/CSS/style.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="pop-up-container">
+        <p class="error-message-pop-up"></p>
+        <div class="container-progress-bar"></div>
+      </div>
+      
+      <form>
+        <div class="container-input">
+          <input-group>
+            <label for="day">Day</label>
+            <input class="dayInput" type="number" />
+          </input-group>
+          <input-group>
+            <label for="month">Month</label>
+            <input class="monthInput" type="number" />
+          </input-group>
+          <input-group>
+            <label for="year">Year</label>
+            <input class="yearInput" type="number" />
+          </input-group>
+        </div>
+
+        <div class="button-container">
+          <button class="btn" type="submit">
+            <img src="assets/images/icon-arrow.svg" alt="Arrow icon" />
+          </button>
+        </div>
+      </form>
+
+      <div class="result-container">
+        <ul>
+          <li><span>--</span> years</li>
+          <li><span>--</span> months</li>
+          <li><span>--</span> days</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="public/JS/script.js"></script>
+  </body>
+</html>
